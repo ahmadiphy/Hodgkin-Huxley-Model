@@ -6,16 +6,17 @@
 
 class HHN
 {
-public:
+private:
     double Ti=200;
-    HHN();
     int state;//chek parameter for initialize
     int Spike,myNum;
     double v,n,m,h,I,cashI;//cashI is sum of
-    //std::vector<int> inC;
-    //std::vector<double> inW;
+    //std::vector<int> inC; //for non symetric connections
+    //std::vector<double> inW; //for non symetric connections
     std::vector<int> outC;
     std::vector<double> outW;
+public:
+    HHN();
     double fv(double v,double n,double m,double h, double I);
     double alpha_n(double v);
     double alpha_m(double v);
