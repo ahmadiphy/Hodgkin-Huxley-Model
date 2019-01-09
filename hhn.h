@@ -57,6 +57,7 @@ public:
     void Connect(std::vector<int>  & cv);
     void UpdateI();
     void Run();
+    double get(string var_str);
 };
 
 #endif // HHN_H
