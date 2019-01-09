@@ -311,10 +311,16 @@ void HHN::UpdateI()
 }
 double HHN::get(string var_str)
 {
+    double result=0
     if(var_str=='v')
-        return v;
-    if(var_str=='h')
-        return h;
+        result=v;
     if(var_str=='n')
-        return n;
+        result=n;
+    if(var_str=='m')
+        result=m;
+    if(var_str=='h')
+        result=h;
+    if(var_str=='I')
+        result=I;
+    return result;
 }
