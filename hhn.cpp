@@ -309,3 +309,12 @@ void HHN::UpdateI()
     //cout<<plr<< endl;
     //cout<<I<<endl;
 }
+double HHN::get(string var_str)
+{
+    if(var_str=='v')
+        return v;
+    if(var_str=='h')
+        return h;
+    if(var_str=='n')
+        return n;
+}
