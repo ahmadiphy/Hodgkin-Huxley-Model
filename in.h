@@ -23,7 +23,8 @@ typedef std::vector<int> iRow;
 typedef std::vector<iRow> iMatrix;
 typedef std::vector<double> dRow;
 typedef std::vector<dRow> dMatrix;
-
+typedef std::vector<float> fRow;
+typedef std::vector<fRow> fMatrix;
 //
 //
 #endif // in_h
