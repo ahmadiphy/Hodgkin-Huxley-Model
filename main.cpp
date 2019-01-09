@@ -75,6 +75,9 @@ int main()
     v_L=10.613;
     dt=0.001;
     v_0=0;
+    //----------------------------------------------------------------------------------------
+    //------------------------------------  one HH Neuron  -----------------------------------
+    //----------------------------------------------------------------------------------------
     HHN hhn1;
     hhn1.Initialize();
     int loopTry=200000;
@@ -85,7 +88,7 @@ int main()
     {
         hhn1.Run();
         hhn1.UpdateI();
-        vPrint<<hhn1.v<<" "<<hhn1.I<<" "<<hhn1.n<<" "<<hhn1.m<<" "<<hhn1.h<<endl;
+        vPrint<<hhn1.get('v')<<" "<<hhn1.get('I')<<" "<<hhn1.get('n')<<" "<<hhn1.get('m')<<" "<<hhn1.get('h')<<endl;
     }
     //----------------------------------------------------------------------------------------
     //-------------------------------------  file writing  -----------------------------------
@@ -95,41 +98,6 @@ int main()
     vuData<<"./data/data_vu.dat";
     ofstream outPrint(outData.str().c_str(),ios_base::binary);
     ofstream vuPrint(vuData.str().c_str(),ios_base::binary);
-    //----------------------------------------------------------------------------------------
-    mf1.DeleteMatElement(N,mat1);
-    cout<<"Dynamics... "<<endl;
-    for(int i=0;i<loopTry;++i)
-    {
-        for(int j=0;j<N;++j)
-        {
-            izhi[j].Run();
-            if(izhi[j].Spike==1)
-            {
-                for(int k=0;k<izhi[j].outC.size();++k)
-                {
-                    int tar=izhi[j].outC[k];
-                    izhi[tar].cashI+=g*(izhi[tar].v-izhi[j].v);
-                }
-            }
-        }
-        //
-        for(int j=0;j<N;++j)
-        {
-            outPrint<<izhi[j].Spike<<" ";
-            izhi[j].UpdateI();
-
-            //cout<<izhi[j].Spike<<" ";
-        }
-        outPrint<<endl;
-        //cout<<endl;
-        if(i>=5000)
-        {
-            for(int j=0;j<N;++j)
-                vuPrint<<izhi[j].v<<" ";
-            vuPrint<<endl;
-        }
-    }
-    */
     //----------------------------------------------------------------------------------------
     //------------------------------------  Time printing  -----------------------------------
     //----------------------------------------------------------------------------------------
