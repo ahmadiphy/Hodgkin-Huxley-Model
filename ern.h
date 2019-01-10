@@ -2,7 +2,6 @@
 #ifndef ERN_H
 #define ERN_H
 
-
 class ERn
 {
 public:
