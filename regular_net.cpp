@@ -1,5 +1,5 @@
 #include "regular_net.h"
-
+// looped connections
 void Regular_net::regT1(int N,int M,iMatrix &a)
 {
     for(int i=0;i<N;++i)
