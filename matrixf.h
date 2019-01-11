@@ -6,8 +6,8 @@ using namespace std;
 class Matrixf
 {
 public:
-    void zMatrix(int nn, iMatrix& aa);
-    void allMatrix(int nn,iMatrix& aa);
+    void zMatrix(int nn, iMatrix& aa);//symetric zero matrix
+    void allMatrix(int nn,iMatrix& aa);//all to all matrix
     void pMatrix(int nn, iMatrix& aa);
     void pMatrixD(int nn,dMatrix& aa);
     void CnMatrix(int nn, iMatrix& aa);
