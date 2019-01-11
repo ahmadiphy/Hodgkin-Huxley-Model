@@ -306,8 +306,6 @@ void HHN::UpdateI()
     //cashI+0.00055;
     //double xI=10*sin(cashI);
     I=plr;//(xI+rI)/2;//udistribution(gen);//=rI+cashI/D;
-    //cout<<plr<< endl;
-    //cout<<I<<endl;
 }
 double HHN::get(string var_str)
 {
