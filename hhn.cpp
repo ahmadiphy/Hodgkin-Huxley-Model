@@ -1,5 +1,4 @@
 #include "hhn.h"
-//#include "pinknumber.h"
 
 using namespace std;
 
@@ -283,28 +282,17 @@ void HHN::Run()
 //----------------------------------------------------------------------------------------
 void HHN::UpdateI()
 {
-    //PinkNumber pink1;
     random_device rd;
     mt19937 gen(rd());  // to seed mersenne twister.
     poisson_distribution<> pdist(10);
     normal_distribution<double> distribution(10.0,10.0);
     uniform_real_distribution<double> udistribution(0.0,1.0);
     gamma_distribution<double> gdistribution(1,6);
-    //double D=outC.size();
     double rI=udistribution(gen);
     double n=-1.4500001;
     double x0=0.01;
     double x1=1000.0001;
     double plr = pow(((pow(x1,(n+1))-pow(x0,(n+1)))*rI+pow(x0,(n+1))),(1/(n+1)));//pink
-    //cashI++;
-    //double g=2.35;
-//    if(cashI==Ti)
-   // {
-    //    I=I+(-80)*(gi)*;
-    //    cashI=0;
-   // }
-    //cashI+0.00055;
-    //double xI=10*sin(cashI);
     I=plr;//(xI+rI)/2;//udistribution(gen);//=rI+cashI/D;
 }
 double HHN::get(string var_str)
