@@ -15,7 +15,6 @@ void ERn::ERnetwork(double avgK, int nn, iMatrix &aa)
     int i=0;
     int r1=0,r2=0;
     cout<<i<<" "<<links<<endl;
-    //for(int i=0;i<)
     do{
         cout<<"****"<<i<<" ";
         r1=0;
@@ -62,7 +61,6 @@ void ERn::PCNN(int Ne, int Ni, dMatrix & aa)
     mt19937 gen(rd());  // to seed mersenne twister.
     uniform_real_distribution<> dist1_1(0,1);
     uniform_real_distribution<> dist1_2(0,1);
-    //uniform_int_distribution<> distall(0,nn-1);
     for(int i=0;i<N;++i)
     {
         for(int j=0;j<Ne;++j)
