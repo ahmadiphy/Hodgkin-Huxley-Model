@@ -292,8 +292,8 @@ void HHN::UpdateI()
     double n=-1.4500001;
     double x0=0.01;
     double x1=1000.0001;
-    double plr = pow(((pow(x1,(n+1))-pow(x0,(n+1)))*rI+pow(x0,(n+1))),(1/(n+1)));//pink
-    I=plr;//(xI+rI)/2;//udistribution(gen);//=rI+cashI/D;
+    double plr = pow(((pow(x1,(n+1))-pow(x0,(n+1)))*rI+pow(x0,(n+1))),(1/(n+1)));//pink noise
+    I=plr;
 }
 double HHN::get(string var_str)
 {
