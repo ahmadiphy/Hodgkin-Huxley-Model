@@ -11,8 +11,8 @@ private:
     int state;//chek parameter for initialize
     int Spike,myNum;
     double v,n,m,h,I,cashI;//cashI is sum of
-    //std::vector<int> inC; //for non symetric connections
-    //std::vector<double> inW; //for non symetric connections
+    std::vector<int> inC; //for non symetric connections
+    std::vector<double> inW; //for non symetric connections
     std::vector<int> outC;
     std::vector<double> outW;
 public:
