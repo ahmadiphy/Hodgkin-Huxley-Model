@@ -295,18 +295,18 @@ void HHN::UpdateI()
     double plr = pow(((pow(x1,(n+1))-pow(x0,(n+1)))*rI+pow(x0,(n+1))),(1/(n+1)));//pink noise
     I=plr;
 }
-double HHN::get(string var_str)
+double HHN::get(char var_str)
 {
-    double result=0
-    if(var_str=='v')
+    double result=0;
+    if(var_str == 'v')
         result=v;
-    if(var_str=='n')
+    if(var_str == 'n')
         result=n;
-    if(var_str=='m')
+    if(var_str == 'm')
         result=m;
-    if(var_str=='h')
+    if(var_str == 'h')
         result=h;
-    if(var_str=='I')
+    if(var_str == 'I')
         result=I;
     return result;
 }

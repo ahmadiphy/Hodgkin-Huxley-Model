@@ -25,9 +25,9 @@ int main()
     //---------------------------- geting system time and date -------------------------------
     //----------------------------------------------------------------------------------------
     time_t now = time(0)+16200;
-    char* dt = ctime(&now);
+    char* ddt = ctime(&now);
     tm *gmtm = gmtime(&now);
-    dt = asctime(gmtm);
+    ddt = asctime(gmtm);
     //----------------------------------------------------------------------------------------
     //----------------------------------  make directory -------------------------------------
     //----------------------------------------------------------------------------------------
@@ -58,8 +58,8 @@ int main()
     infoPrint<<"------------- Simulation of HH Neurons on HMN --------------"<<endl;
     infoPrint<<"------------------------------------------------------------"<<endl;
     //----------------------------------------------------------------------------------------
-    cout<<"The Runing Start date and time is: "<<dt <<endl;
-    infoPrint<<"The Runing Start date and time is: "<<dt <<endl;
+    cout<<"The Runing Start date and time is: "<<ddt <<endl;
+    infoPrint<<"The Runing Start date and time is: "<<ddt <<endl;
     //----------------------------------------------------------------------------------------
     //---------------------------- Initialize Global Variables -------------------------------
     //----------------------------------------------------------------------------------------
@@ -99,11 +99,11 @@ int main()
     //------------------------------------  Time printing  -----------------------------------
     //----------------------------------------------------------------------------------------
     now = time(0)+16200;
-    dt = ctime(&now);
+    ddt = ctime(&now);
     gmtm = gmtime(&now);
-    dt = asctime(gmtm);
-    cout<<"The Runing End   date and time is: "<<dt<< endl;
-    infoPrint<<"The Runing End   date and time is: "<<dt<< endl;
+    ddt = asctime(gmtm);
+    cout<<"The Runing End   date and time is: "<<ddt<< endl;
+    infoPrint<<"The Runing End   date and time is: "<<ddt<< endl;
     infoPrint<<"------------------------------------------------------------"<<endl;
     //----------------------------------------------------------------------------------------
 }
