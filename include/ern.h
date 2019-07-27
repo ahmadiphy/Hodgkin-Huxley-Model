@@ -1,7 +1,7 @@
 #include "in.h"
 #ifndef ERN_H
 #define ERN_H
-
+//test 
 class ERn
 {
 public:
